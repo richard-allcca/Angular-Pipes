@@ -2,26 +2,48 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
-## Development server
+## Nota de Common module
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- PIPES para usar pipes en angular debes importar el paquete "common"
 
-## Code scaffolding
+## Nota de instalación - Prime Ng
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Instalar los siguientes modulos:
 
-## Build
+         npm install primeng --save
+         npm install primeicons --save
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Styles Prime NG, se deben agregar los siguientes módulos en angular.json en "styles" (selecciona un theme de Prime Ng)
 
-## Running unit tests
+         node_modules/primeicons/primeicons.css
+         node_modules/primeng/resources/themes/vela-blue/theme.css
+         node_modules/primeng/resources/primeng.min.css
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Configuración de estilos Prime Ng
 
-## Running end-to-end tests
+- Usa las variables de "css" disponibles en "root" luego del paso anterior de intalación
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Enlaces
 
-## Further help
+- [Api List](https://angular.io/api?query=pipe)
+- [Prime NG](https://www.primefaces.org/primeng/)
+- [Iconos Prime Ng](https://www.primefaces.org/primeng/icons)
+- [Prime Flex](https://www.primefaces.org/primeflex/setup)
+- [Date Pipe](https://www.primefaces.org/primeng/card)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Banderas para comandos `CLI`
+
+`--flat` evita crear una carpeta appRoter
+`--skip-tests` evita crear un archivo para test
+`-is` evita crear una hoja estilos al crear un componente
+
+## Rutas
+
+1. Crear si no tienes el `app-router.module.ts`
+2. Crear los `path` de las rutas validas.
+3. Exportar el `RouterModule` desde `app-router.module`
+4. Importar en el `app.module.ts` en el `app.module.ts`
+
+## Vista del flujo de archivos
+
+![Vista de la estructura de archivos](./src/assets/pipes-flujo.jpeg)

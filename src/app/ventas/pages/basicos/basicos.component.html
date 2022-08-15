@@ -1,0 +1,77 @@
+<div class="">
+   <h1>Pipes Básicos</h1>
+   <p>
+      Pipes incluidos en Angular - Usualmente en el Common Module.
+   </p>
+</div>
+
+<!-- NOTE - para las cards se combina primeNg con primeFlex-->
+<!-- https://www.primefaces.org/primeflex/setup -->
+<!-- https://www.primefaces.org/primeng/card -->
+
+<div class="grid">
+   <div class="col-4">
+      <p-card header="uppercase" [subheader]="nombreLower| uppercase" >
+         {{nombreLower| uppercase}}
+      </p-card>
+   </div>
+   
+   <div class="col-4 ri ">
+      <p-card header="lowercase" [subheader]="nombreUpper | lowercase" >
+         {{nombreUpper | lowercase}}
+      </p-card>
+   </div>
+   
+   <div class="col-4 ">
+      <p-card header="titlecase" [subheader]="nombreCompleto| titlecase" >
+         {{nombreCompleto| titlecase}}
+      </p-card>
+   </div>
+</div>
+
+<!-- NOTE - {{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }} -->
+
+<div class="">
+   <h1>Pipes | Date | Fecha</h1>
+   <p>
+      Pipe para mostrar las fechas.
+   </p>
+</div>
+
+
+<div class="grid">
+   <p-card class="col-6">
+      <ul>
+         <li>fecha</li>
+         <li>fecha | date</li>
+         <li>fecha | date:'short'</li>
+         <li>fecha | date:'long'</li>
+         <li>fecha | date:'MMMM'</li>
+         <li>fecha | date:'MMMM dd yy'</li>
+      </ul>
+
+      <hr>
+
+      <ul>
+         <li> TODO - en proceso</li>
+      </ul>
+
+   </p-card>
+
+   <p-card class="col-6">
+      <ul>
+         <li>{{date}}</li>
+         <li>{{date | date }}</li>
+         <li>{{date | date: 'short' }}</li>
+         <li>{{date | date: 'long' }}</li>
+         <li>{{date | date: 'MMMM' }}</li>
+         <li>{{date | date: 'MMMM dd, yy' }}</li>
+      </ul>
+
+      <hr>
+
+      <ul>
+         <li>TODO - en proceso</li>
+      </ul>
+   </p-card>
+</div>
