@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - PIPES para usar pipes en angular debes importar el paquete "common"
 
-## Nota de instalación - Prime Ng
+## Nota de Instalación - Prime Ng
 
 1. Instalar los siguientes modulos:
 
@@ -19,9 +19,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
          node_modules/primeng/resources/themes/vela-blue/theme.css
          node_modules/primeng/resources/primeng.min.css
 
-## Configuración de estilos Prime Ng
+3. Puedes usar las variables de "css" disponibles en "root" luego del paso anterior de intalación
 
-- Usa las variables de "css" disponibles en "root" luego del paso anterior de intalación
+## Configuración de Animaciones Prime Ng
+  
+1. Animaciones de `PrimerNg`, busca en la doc. el apartado `StackBlitz` que es un vscode y copia del `app-module` la inportación de `BrowseranimationModule`
 
 ## Enlaces
 
@@ -30,6 +32,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [Iconos Prime Ng](https://www.primefaces.org/primeng/icons)
 - [Prime Flex](https://www.primefaces.org/primeflex/setup)
 - [Date Pipe](https://www.primefaces.org/primeng/card)
+- [Async Pipe](https://angular.io/api/common/AsyncPipe)
 
 ## Banderas para comandos `CLI`
 

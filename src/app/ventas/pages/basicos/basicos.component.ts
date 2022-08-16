@@ -11,6 +11,6 @@ export class BasicosComponent {
    nombreLower: string = 'richard allcca';
    nombreCompleto: string = 'RicHard AllCca';
 
-   date: Date = new Date();
+   fecha: Date = new Date();
 
 }

@@ -1,1 +1,29 @@
-<p>numeros works!</p>
+<div class="">
+   <h1>Decimal Pipe y Porcentaje</h1>
+   <p>
+      Pipes incluidos en Angular - Usualmente en el Common Module.
+   </p>
+</div>
+
+<!-- REVIEW  
+   - el primer parametro de currency es para el simbolo 
+   - el segundo parametro es para el simbolo corto(no puede ser ' ')
+   - el tercero es para indicar la cantidad de numeros luego del punto
+-->
+<div class="grid">
+   <div class="col-4">
+      <p-card header="Ventas Netas" subheader="del presente año" >
+         {{ ventasNetas + 2000000 | number : '1.2-2' }}
+      </p-card>
+   </div>
+   <div class="col-4">
+      <p-card header="Ventas Brutas" subheader="del presente año" >
+         {{ (ventasNetas + 3000000)  | currency : '$' :'symbol' : '1.3-3' }}
+      </p-card>
+   </div>
+   <div class="col-4">
+      <p-card header="Ganancia Porcentual" subheader="del presente año" >
+         {{ porcentaje | percent : '1.2-2' }}
+      </p-card>
+   </div>
+</div>

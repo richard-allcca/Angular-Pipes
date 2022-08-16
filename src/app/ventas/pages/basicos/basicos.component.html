@@ -29,7 +29,10 @@
    </div>
 </div>
 
-<!-- NOTE - {{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }} -->
+<!--
+    NOTE - {{ value_expression | date : 'format' : 'timezone' : 'locale' }} 
+    despues de date los pàrametros son opcionales y para saltar uno se usa ''
+-->
 
 <div class="">
    <h1>Pipes | Date | Fecha</h1>
@@ -53,25 +56,30 @@
       <hr>
 
       <ul>
-         <li> TODO - en proceso</li>
+         <li> fecha | date:'long' : 'GTM-6'</li>
+         <li> fecha | date:'long' : 'GTM-4'</li>
+         <li> fecha | date:'long' : '' : 'en'</li>
       </ul>
 
    </p-card>
 
    <p-card class="col-6">
       <ul>
-         <li>{{date}}</li>
-         <li>{{date | date }}</li>
-         <li>{{date | date: 'short' }}</li>
-         <li>{{date | date: 'long' }}</li>
-         <li>{{date | date: 'MMMM' }}</li>
-         <li>{{date | date: 'MMMM dd, yy' }}</li>
+         <li>{{fecha}}</li>
+         <li>{{fecha | date }}</li>
+         <li>{{fecha | date: 'short' }}</li>
+         <li>{{fecha | date: 'long' }}</li>
+         <li>{{fecha | date: 'MMMM' }}</li>
+         <li>{{fecha | date: 'MMMM dd, yy' }}</li>
       </ul>
 
       <hr>
 
       <ul>
-         <li>TODO - en proceso</li>
+         <li>{{fecha | date:'long':'GMT-6'}}</li>
+         <li>{{fecha | date:'long':'GMT-4'}}</li>
+         <li>{{fecha | date:'long':'':'en'}}</li>
       </ul>
+      <!-- NOTE - para otro idioma agrega la importación y registro en app-module -->
    </p-card>
 </div>
