@@ -1,6 +1,10 @@
 # PipesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+- Demostración del uso de Pipes que vienen con Angular
+- Demostración del uso de Pipes `Personalizados`
+- Estilos de los componentes fueron echos con `Prime Ng`
+
 
 ## Nota de Common module
 
@@ -46,7 +50,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. Crear si no tienes el `app-router.module.ts`
 2. Crear los `path` de las rutas validas.
 3. Exportar el `RouterModule` desde `app-router.module`
-4. Importar en el `app.module.ts` en el `app.module.ts`
+4. Importar en el `app.router.module.ts` en el `app.module.ts`
 
 ## Vista del flujo de archivos
 
