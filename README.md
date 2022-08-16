@@ -33,6 +33,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [Prime Flex](https://www.primefaces.org/primeflex/setup)
 - [Date Pipe](https://www.primefaces.org/primeng/card)
 - [Async Pipe](https://angular.io/api/common/AsyncPipe)
+- [Prime Toolbar](https://primefaces.org/primeng/toolbar)
 
 ## Banderas para comandos `CLI`
 
