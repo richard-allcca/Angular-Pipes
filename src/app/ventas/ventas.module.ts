@@ -20,7 +20,7 @@ import { OrdenarPipe } from './pipes/ordenar.pipe';
       NoComunesComponent,
       BasicosComponent,
       OrdenarComponent,
-      // pipes
+      // Pipes personalizados
       MayusculaPipe,
       VuelaPipe,
       OrdenarPipe

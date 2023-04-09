@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { interval } from 'rxjs';
+import { Observable, interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -8,19 +8,19 @@ import { interval } from 'rxjs';
 })
 export class NoComunesComponent {
 
-   // i18nSlect
+   // i18nSlect (valida un string para dar resultado)
    nombre: string = 'Cristina';
    genero: string = 'Femenino';
 
-   invitacionMap = {
+   invitacionMap:{} = {
       'Masculino': 'invitarlo',
       'Femenino': 'invitarla',
    }
 
-   // i18nPlural
+   // i18nPlural (valida un numero para dar resultado)
    clientes: string[] = ['Richard', 'Juan', 'Pedro'];
 
-   registrosMap = {
+   registrosMap:{} = {
       '=0': 'No hay clientes esperando',
       '=1': 'Hay un cliente esperando',
       'other': 'Hay # clientes esperando'
@@ -30,20 +30,20 @@ export class NoComunesComponent {
       this.nombre == 'Cristina' ? this.nombre = 'Gatita' : this.nombre = 'Sin alias'
    }
 
-   // Pipe Slice
+   // Pipe Slice (hace el corte excluyendo el 2° parametro)
    borrarCliente() {
       this.clientes.pop();
    }
 
-   // Pipe KeyValue - te ayuda a iterar un objeto con "ngFor"
-   persona = {
+   // Pipe KeyValue (Itera un Objeto con "ngFor")
+   persona:{} = {
       nombre: 'Richard',
       edad: 35,
       direccion: 'Calle falsa 123'
    }
 
    // Pipe json
-   heroes = [
+   heroes:{} = [
       {
          nombre: 'Batman', poder: 'Dinero'
       },
@@ -52,8 +52,9 @@ export class NoComunesComponent {
       }
    ]
 
-   // Async Pipe - te permite hacer peticiones asincronas, tiene como condición que sea Observable o Promise
-   miObservable = interval(1000);
+   // Async Pipe, te permite hacer peticiones asincronas
+  //  Tiene como condición que sea Observable o Promise
+   miObservable:Observable<number> = interval(1000); // 0,1,2,3,4
 
    valorPromesa = new Promise((resolve, reject) => {
       setTimeout(() => {

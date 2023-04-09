@@ -1,33 +1,63 @@
 # PipesApp
 
 - This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
-- Demostración del uso de Pipes que vienen con Angular
-- Demostración del uso de Pipes `Personalizados`
-- Estilos de los componentes fueron echos con `Prime Ng`
 
+Componentes estilizados con `Prime Ng`
 
-## Nota de Common module
+Correr en local si tienes cli 14.0.2 de forma global en tu equipo
 
-- PIPES para usar pipes en angular debes importar el paquete "common"
+    ng serve
 
-## Nota de Instalación - Prime Ng
+Correr en local si la versión de tu cli es diferente a la 14.0.2
 
-1. Instalar los siguientes modulos:
+    npm install -D @angular/cli
+    npm run start
 
-         npm install primeng --save
-         npm install primeicons --save
+## Notas 
 
-2. Styles Prime NG, se deben agregar los siguientes módulos en angular.json en "styles" (selecciona un theme de Prime Ng)
+### Common module
 
-         node_modules/primeicons/primeicons.css
-         node_modules/primeng/resources/themes/vela-blue/theme.css
-         node_modules/primeng/resources/primeng.min.css
+- Para usar los pipes en angular necesitas importar el modulo "commonModule"
 
-3. Puedes usar las variables de "css" disponibles en "root" luego del paso anterior de intalación
+### let-heroe
+
+- Marcador html tomar el objeto devuelto del pipe o tabla de primeNg en el html y pintar sus valores
+
+## Instalación - Prime Ng
+
+  1. Instalar los siguientes modulos:
+
+          npm install primeng --save
+          npm install primeicons --save
+
+  2. Styles Prime NG, se deben agregar los siguientes módulos en angular.json en "styles" (selecciona un tema de Prime Ng)
+
+          node_modules/primeicons/primeicons.css
+          node_modules/primeng/resources/themes/vela-blue/theme.css
+          node_modules/primeng/resources/primeng.min.css
+
+  3. Puedes usar las variables de "css" disponibles en "root" luego del paso anterior de intalación
 
 ## Configuración de Animaciones Prime Ng
-  
-1. Animaciones de `PrimerNg`, busca en la doc. el apartado `StackBlitz` que es un vscode y copia del `app-module` la inportación de `BrowseranimationModule`
+
+  1. Busca en la doc. el apartado `StackBlitz` que es un vscode incrustado.
+  2. Copia del archivo `app-module` la inportación de `BrowseranimationModule`
+
+## Configuración de Pipe Fecha (app.module)
+
+De la misma forma tienes que registrar el idioma que necesties usar
+
+    import localeEsPeru from "@angular/common/locales/es-PE";
+    import { registerLocaleData } from '@angular/common'
+    registerLocaleData(localeEsPeru);
+
+implementación global (app.module)
+
+    providers: [
+      {
+         provide: LOCALE_ID, useValue: 'es-PE'
+      }
+    ],
 
 ## Enlaces
 
@@ -47,10 +77,10 @@
 
 ## Rutas
 
-1. Crear si no tienes el `app-router.module.ts`
-2. Crear los `path` de las rutas validas.
-3. Exportar el `RouterModule` desde `app-router.module`
-4. Importar en el `app.router.module.ts` en el `app.module.ts`
+  1. Crear si no tienes el `app-router.module.ts`
+  2. Crear los `path` de las rutas validas.
+  3. Exportar el `RouterModule` desde `app-router.module`
+  4. Importar en el `app.router.module.ts` en el `app.module.ts`
 
 ## Vista del flujo de archivos
 

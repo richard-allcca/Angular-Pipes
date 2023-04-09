@@ -8,37 +8,38 @@ import { Color, Heroe } from '../../interfaces/ventas.interface';
 })
 export class OrdenarComponent {
 
-   boleano: boolean = true;
-   ordenarPor: string = '';
-   heroes: Heroe[] = [
-      {
-         nombre: 'Super man',
-         vuela: true,
-         color: Color.Azul
-      },
-      {
-         nombre: 'Batman',
-         vuela: false,
-         color: Color.Negro
-      },
-      {
-         nombre: 'Robin',
-         vuela: false,
-         color: Color.Verde
-      },
-      {
-         nombre: 'Dark devil',
-         vuela: false,
-         color: Color.Rojo
-      },
-   ]
+  boleano: boolean = true;
+  ordenarPor: string = '';
 
-   enMayuscula() {
-      this.boleano = !this.boleano;
-   }
+  heroes: Heroe[] = [
+    {
+      nombre: 'Super man',
+      vuela: true,
+      color: Color.Azul
+    },
+    {
+      nombre: 'Batman',
+      vuela: false,
+      color: Color.Negro
+    },
+    {
+      nombre: 'Robin',
+      vuela: false,
+      color: Color.Verde
+    },
+    {
+      nombre: 'Dark devil',
+      vuela: false,
+      color: Color.Rojo
+    },
+  ];
 
-   cambiarOrden(valor: string) {
-      this.ordenarPor = valor;
-   }
+  enMayuscula() {
+    this.boleano = !this.boleano;
+  }
+
+  cambiarOrden(valor: string) {
+    this.ordenarPor = valor;
+  }
 
 }

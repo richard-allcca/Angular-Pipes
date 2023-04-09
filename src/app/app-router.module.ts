@@ -6,36 +6,36 @@ import { NoComunesComponent } from './ventas/pages/no-comunes/no-comunes.compone
 import { OrdenarComponent } from './ventas/pages/ordenar/ordenar.component';
 
 const routes: Routes = [
-   {
-      path: '',
-      component: BasicosComponent,
-      pathMatch: 'full',
-   },
-   {
-      path: 'numeros',
-      component: NumerosComponent
-   },
-   {
-      path: 'no-comunes',
-      component: NoComunesComponent
-   },
-   {
-      path: 'ordenar',
-      component: OrdenarComponent
-   },
-   {
-      path: '**',
-      redirectTo: '',
-   }
+  {
+    path: '',
+    component: BasicosComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'numeros',
+    component: NumerosComponent,
+  },
+  {
+    path: 'no-comunes',
+    component: NoComunesComponent,
+  },
+  {
+    path: 'ordenar',
+    component: OrdenarComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '',
+  },
 ];
 
 @NgModule({
-   declarations: [],
-   imports: [RouterModule.forRoot(routes)],
-   exports: [RouterModule]
+  declarations: [],
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRouterModule { }
+export class AppRouterModule {}
 
-// NOTE 
+// NOTE
 // patMatch: 'full' solo cuando el path esta vacio se muestra el componente
-// redirecTo: '' redirecciona a la pagina principal 
+// redirecTo: '' redirecciona a la pagina principal
