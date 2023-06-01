@@ -13,6 +13,7 @@ import { VentasModule } from './ventas/ventas.module';
 
 // NOTE - locale es para el formato de fechas desde aqui a toda la app
 
+// import localeEsPeru from "@angular/common/locales/es-MX";
 import localeEsPeru from "@angular/common/locales/es-PE";
 import { registerLocaleData } from '@angular/common'
 registerLocaleData(localeEsPeru);
@@ -31,6 +32,7 @@ registerLocaleData(localeEsPeru);
    providers: [
       {
          provide: LOCALE_ID, useValue: 'es-PE'
+        //  provide: LOCALE_ID, useValue: 'es-MX'
       }
    ],
   bootstrap: [AppComponent]

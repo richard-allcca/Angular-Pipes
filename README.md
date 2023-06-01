@@ -13,15 +13,11 @@ Correr en local si la versión de tu cli es diferente a la 14.0.2
     npm install -D @angular/cli
     npm run start
 
-## Notas 
+## Notas
 
-### Common module
+Common module
 
 - Para usar los pipes en angular necesitas importar el modulo "commonModule"
-
-### let-heroe
-
-- Marcador html tomar el objeto devuelto del pipe o tabla de primeNg en el html y pintar sus valores
 
 ## Instalación - Prime Ng
 
@@ -75,13 +71,37 @@ implementación global (app.module)
 `--skip-tests` evita crear un archivo para test
 `-is` evita crear una hoja estilos al crear un componente
 
-## Rutas
+## Pipes en este proyecto
 
-  1. Crear si no tienes el `app-router.module.ts`
-  2. Crear los `path` de las rutas validas.
-  3. Exportar el `RouterModule` desde `app-router.module`
-  4. Importar en el `app.router.module.ts` en el `app.module.ts`
+Uppercase
 
+Lowercase
+
+TitleCase
+
+Date
+
+Decimal
+
+Currency
+
+Percent
+
+i18nSelect
+
+i18Plural
+
+KeyValue
+
+Json
+
+Async
+
+## Vista previa
+
+![Home vista previa](./src/assets/home-pipes.png)
+
+![PIPES personaliazados](./src/assets/custom-pipes.png)
 ## Vista del flujo de archivos
 
 ![Vista de la estructura de archivos](./src/assets/pipes-flujo.jpeg)

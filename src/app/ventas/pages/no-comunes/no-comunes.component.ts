@@ -8,16 +8,16 @@ import { Observable, interval } from 'rxjs';
 })
 export class NoComunesComponent {
 
-   // i18nSlect (valida un string para dar resultado)
-   nombre: string = 'Cristina';
-   genero: string = 'Femenino';
+  // i18nSlect (valida constra este invitacionMap para mostrar un genero)
+  nombre: string = 'Cristina';
+  genero: string = 'femenino';
 
    invitacionMap:{} = {
-      'Masculino': 'invitarlo',
-      'Femenino': 'invitarla',
+      'masculino': 'invitarlo',
+      'femenino': 'invitarla',
    }
 
-   // i18nPlural (valida un numero para dar resultado)
+   // i18nPlural (valida contra registrosMap para dar resultado)
    clientes: string[] = ['Richard', 'Juan', 'Pedro'];
 
    registrosMap:{} = {
@@ -26,8 +26,10 @@ export class NoComunesComponent {
       'other': 'Hay # clientes esperando'
    }
 
-   cambiarNombre() {
-      this.nombre == 'Cristina' ? this.nombre = 'Gatita' : this.nombre = 'Sin alias'
+   cambiarInvitado() {
+      // this.nombre == 'Cristina' ? this.nombre = 'Gatita' : this.nombre = 'Sin alias'
+      this.nombre = 'Richard';
+      this.genero = 'masculino'
    }
 
    // Pipe Slice (hace el corte excluyendo el 2° parametro)
@@ -35,7 +37,7 @@ export class NoComunesComponent {
       this.clientes.pop();
    }
 
-   // Pipe KeyValue (Itera un Objeto con "ngFor")
+   // Pipe KeyValue (Permite Iterar un Objeto con "ngFor" como si fuera un array)
    persona:{} = {
       nombre: 'Richard',
       edad: 35,
